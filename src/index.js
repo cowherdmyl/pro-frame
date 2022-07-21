@@ -12,3 +12,6 @@ for (let i = 0; i < 10; i++) {
 f1()
 f2()
 console.log(a)
+
+const obj = {name: 'menyuliang', age: 20}
+console.log(obj)
