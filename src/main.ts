@@ -1,26 +1,7 @@
-interface Obj {
-  name: string
-  age: number
-  job?: string
-  say(name: string): void
-}
-const obj: Obj = {
-  name: 'myl',
-  age: 24,
-  say(name) {
-    console.log(`my name is ${name}`)
-  },
-}
-console.log(obj)
+import { createApp } from 'vue'
+// import App from './App.vue'
+import 'normalize.css'
 
-function f1(name: string): void {
-  console.log(`my name is ${name}`)
-}
-f1('zhangsan')
+const app = createApp({})
 
-const f2: (name: string) => void = (name: string): void => {
-  console.log(`my name is ${name}`)
-}
-f2('lisi')
-
-export {}
+app.mount('#app')
