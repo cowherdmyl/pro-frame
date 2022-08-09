@@ -12,7 +12,7 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  ignorePatterns: ['node_modules', 'dist', 'typings', 'index.html'],
+  ignorePatterns: ['node_modules', 'dist', 'disttsc', 'typings', 'index.html'],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',

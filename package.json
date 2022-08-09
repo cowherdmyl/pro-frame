@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "tsc --watch",
+    "serve": "browser-sync ./dist/ --files \"css/*.css\"",
+    "start": "run-p build serve"
   },
   "keywords": [],
   "author": "",
@@ -15,11 +17,13 @@
     "@commitlint/config-conventional": "17.0.3",
     "@typescript-eslint/eslint-plugin": "^5.32.0",
     "@typescript-eslint/parser": "^5.32.0",
+    "browser-sync": "^2.27.10",
     "eslint": "8.20.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
+    "npm-run-all": "^4.1.5",
     "prettier": "2.7.1",
     "typescript": "^4.7.4"
   },

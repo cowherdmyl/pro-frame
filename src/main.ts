@@ -5,3 +5,4 @@ import 'normalize.css'
 const app = createApp({})
 
 app.mount('#app')
+console.log('jlkjjk123')
